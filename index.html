@@ -6,21 +6,35 @@
     <title>BackboneTest</title>
 </head>
 <body>
+    <!--
+    <script type="text/template" id="bike-template">
+        <div class="view">
+
+        </div>
+    </script>
+    -->
     <section id="todoapp">
         <header id="header">
             <h1>Todos</h1>
-            <input id="new-todo" placeholder="Whats need to be done?">
+            <input id="new-todo" placeholder="What needs to be done?" autofocus>
         </header>
-    </section>
-    <section id="main">
-        <ul id="todo-list">
-
-        </ul>
+        <section id="main">
+            <ul id="todo-list"></ul>
+        </section>
     </section>
 
-    <script src="js/jquery.js"></script>
-    <script src="js/underscore.js"></script>
-    <script src="js/backbone.js"></script>
+    <!-- Templates -->
+    <script type="text/template" id="item-template">
+        <div class="view">
+            <input class="toggle" type="checkbox">
+            <label><%- title %></label>
+        </div>
+    </script>
+
+    <script src="js/jquery.js" type="text/javascript"></script>
+    <script src="js/underscore.js" type="text/javascript"></script>
+    <script src="js/backbone.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/backbone-localstorage.js/1.1.16/backbone.localStorage.js" type="text/javascript"></script>
     <script src="js/index.js"></script>
 </body>
 </html>
